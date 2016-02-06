@@ -1,0 +1,50 @@
+
+<!--
+    Relative paths assume component is being run from inside an app or another component, where dependencies are flat
+    siblings. When this component is run from its own repo (e.g. ui tests, examples), we assume the server is started with
+    'grunt depserve' (or similar server setup) to enable correct finding of bower dependencies for local runs.
+-->
+<link rel="import" href="../polymer/polymer.html"/>
+
+
+<!--
+Element providing an overlay for use with other components.
+
+Simply place the the anywhere on the page. Provides a fixed position, 100vw x 100vh overlay at z position 1000.
+Type dark = 65% black
+Type light = 15% black
+
+NOTE:
+
+##### Usage
+
+    <px-overlay type="light" ></px-overlay>
+
+@element px-overlay
+@blurb Element providing an overlay for use with other components.
+@homepage index.html
+@demo demo.html
+-->
+<dom-module id="px-overlay">
+    <link rel="import" type="css" href="css/px-overlay.css"/>
+    <template>
+    </template>
+</dom-module>
+
+<script>
+    Polymer({
+        is: 'px-overlay',
+        /**
+         * Properties block, expose attribute values to the DOM via 'reflect'
+         *
+         * @property properties
+         * @type Object
+         */
+        properties: {
+            type: {
+                type: String,
+                value:"light"
+            }
+        }
+    });
+</script>
