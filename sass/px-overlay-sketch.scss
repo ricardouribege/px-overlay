@@ -39,4 +39,9 @@ Predix branding rules go in px-overlay-predix.scss, not in this file.
   height:100vh;
   top:0;
   left:0;
+
+  &.larger{
+    width:110vw;
+    height:110vh;
+  }
 }

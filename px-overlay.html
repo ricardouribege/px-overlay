@@ -45,6 +45,30 @@ NOTE:
                 type: String,
                 value:"light"
             }
+        },
+        attached: function() {
+            // if a parent was transformed and our overlay is no longer at window origin...
+            var overlayRect = this.getBoundingClientRect();
+            // if the overlay should have a coor of 0,0 unless it has been transformed
+            if(overlayRect['left'] != 0 || overlayRect['top'] != 0){
+              var self = this;
+              var originX = -1 * overlayRect['left'] ;
+              var originY = -1 * overlayRect['top'];
+
+              // make the overlay a bit bigger in case
+              this.toggleClass('larger',true);
+
+              this.style.left = originX + 'px';
+              this.style.top = originY + 'px';
+
+              // it is also no longer fixed, so needs to scroll with window
+              window.addEventListener('scroll',function(){
+                  // document.documentElement for FF and IE
+                  // document.body for webkit
+                  self.style.top = originY + document.body.scrollTop + document.documentElement.scrollTop + 'px';
+                  self.style.left = originX + document.body.scrollLeft + document.documentElement.scrollLeft + 'px';
+              });
+            }
         }
     });
 </script>
