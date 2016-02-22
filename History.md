@@ -1,3 +1,7 @@
+v0.0.3
+==================
+* Updated license
+
 v0.0.1
 ==================
 * Initial release
