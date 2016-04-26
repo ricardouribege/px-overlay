@@ -1,3 +1,7 @@
+v0.0.4
+==================
+* updated README, and added link to gh-pages
+
 v0.0.3
 ==================
 * Updated license

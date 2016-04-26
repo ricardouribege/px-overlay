@@ -12,13 +12,9 @@ Px-Overlay is a Predix Experience ('Px') component that defines a full viewport 
     <px-overlay type="dark"></px-overlay>
 
 ```
+## documentation
 
-### Attributes
-##### type
-*Type:* **String** - *Default:* light
-
-Valid types are 'light' and 'dark'
-
+Read the full API and view the demo [here](https://predixdev.github.io/px-overlay).
 
 ## Getting Started
 
@@ -87,26 +83,14 @@ watch: {
 }
 ```
 
-### Options
-
-Does this component have runtime configuration options?  If so, they should be able to be passed as attributes on the element with examples shown below.
-
-### Function calls
-
-What is the public API of this component?
-
-### Extending styles
-
-Documented CSS extension points?
-
 ### Extending behavior
 
-See Polymer composition patterns
+See Polymer [composition patterns](https://www.polymer-project.org/1.0/docs/devguide/behaviors.html)
 
-GE Coding Style Guide
----------------------
+### GE Coding Style Guide
 
 [GE JS Developer's Guide](https://github.com/GeneralElectric/javascript)
 
 
 ### Known Issues
+Please use [Github Issues](https://github.com/PredixDev/px-dropdown/issues) to submit any bugs you might find.
