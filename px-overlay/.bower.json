@@ -1,6 +1,6 @@
 {
   "name": "px-overlay",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "main": [
     "px-overlay.html"
   ],
@@ -22,14 +22,13 @@
     "px-starter-kit-design": "https://github.com/PredixDev/px-starter-kit-design.git#~0.4.9"
   },
   "homepage": "https://github.com/predixDev/px-overlay",
-  "_release": "0.1.1",
+  "_release": "0.1.2",
   "_resolution": {
     "type": "version",
-    "tag": "v0.1.1",
-    "commit": "2a8b9b450f57f52863c2c239241ffb4e3ef8c6b5"
+    "tag": "v0.1.2",
+    "commit": "855f8b6ee5553a2b65604ef71da5aafa6423f774"
   },
   "_source": "https://github.com/predixDev/px-overlay.git",
   "_target": "^0.1.1",
-  "_originalSource": "px-overlay",
-  "_direct": true
+  "_originalSource": "px-overlay"
 }
