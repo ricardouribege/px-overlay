@@ -28,6 +28,7 @@ NOTE:
 <dom-module id="px-overlay">
     <link rel="import" type="css" href="css/px-overlay.css"/>
     <template>
+      <div id="overlay" class$="{{_getOverlayClass(type)}}"></div>
     </template>
 </dom-module>
 
@@ -62,7 +63,7 @@ NOTE:
               var originY = -1 * overlayRect['top'];
 
               // make the overlay a bit bigger in case
-              this.toggleClass('larger',true);
+              this.toggleClass('larger',true, this.$.overlay);
 
               this.style.left = originX + 'px';
               this.style.top = originY + 'px';
@@ -75,6 +76,9 @@ NOTE:
                   self.style.left = originX + document.body.scrollLeft + document.documentElement.scrollLeft + 'px';
               });
             }
+        },
+        _getOverlayClass: function() {
+          return this.type;
         }
     });
 </script>
