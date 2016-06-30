@@ -1,3 +1,7 @@
+v0.2.1
+==================
+* Fix in shadow dom
+
 v0.2.0
 ==================
 * Upgrade to Polymer 1.5.0
