@@ -1,3 +1,7 @@
+v0.2.2
+==================
+* Added vulcanize
+
 v0.2.1
 ==================
 * Fix in shadow dom
