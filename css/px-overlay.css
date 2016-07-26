@@ -30,6 +30,9 @@ common/abstract rules go in px-overlay-sketch.scss, not in this file.
  * Monochromatic (gray10 is darkest, gray1 is lightest)
  */
 /**
+ * Define grey = gray to avoid dev typos
+ */
+/**
  * Buttons
  */
 /**
@@ -599,12 +602,20 @@ a {
   height: 100vh;
   top: 0;
   left: 0; }
-  :host.larger {
+
+.larger {
+  width: 110vw;
+  height: 110vh; }
+
+#overlay {
+  width: 100vw;
+  height: 100vh; }
+  #overlay.larger {
     width: 110vw;
     height: 110vh; }
 
-:host[type="light"] {
+.light {
   background-color: rgba(0, 0, 0, 0.15); }
 
-:host[type="dark"] {
+.dark {
   background-color: rgba(0, 0, 0, 0.65); }

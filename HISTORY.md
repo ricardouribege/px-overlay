@@ -1,6 +1,18 @@
-v0.1.4
+v0.2.3
 ==================
 * added vulcanize to the demo gh-pages
+
+v0.2.2
+==================
+* Added vulcanize
+
+v0.2.1
+==================
+* Fix in shadow dom
+
+v0.2.0
+==================
+* Upgrade to Polymer 1.5.0
 
 v0.1.3
 ==================

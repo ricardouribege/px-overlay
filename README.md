@@ -1,4 +1,4 @@
-Px-Overlay
+Px-Overlay [![Build Status](https://travis-ci.org/PredixDev/px-overlay.svg?branch=master)](https://travis-ci.org/PredixDev/px-overlay)
 -----------------------------------------------
 
 ## Overview
