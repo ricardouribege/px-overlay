@@ -1,3 +1,7 @@
+v0.2.3
+==================
+* added vulcanize to the demo gh-pages
+
 v0.2.2
 ==================
 * Added vulcanize
