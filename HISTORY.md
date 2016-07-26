@@ -1,3 +1,7 @@
+v0.1.4
+==================
+* added vulcanize to the demo gh-pages
+
 v0.1.3
 ==================
 * added oss_notice to bower ignore
