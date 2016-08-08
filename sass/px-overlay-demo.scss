@@ -39,6 +39,9 @@ $inuit-enable-code--inline : true;
 $actionable : true;
 @import "px-actionable-text-icons-design/_objects.actionable.scss";
 
+$inuit-enable-btn--tertiary : true;
+@import "px-buttons-design/_objects.buttons.scss";
+
 $inuit-enable-toggle--small : true;
 @import "px-toggle-design/_objects.toggle.scss";
 
