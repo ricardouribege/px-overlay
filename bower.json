@@ -39,8 +39,5 @@
     "px-spacing-design": "~0.3.8",
     "px-toggle-design": "^0.2.12",
     "px-buttons-design": "^0.4.26"
-  },
-  "resolutions": {
-    "px-clipboard": "^0.0.11"
   }
 }
