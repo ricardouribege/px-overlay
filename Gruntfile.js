@@ -24,9 +24,13 @@ module.exports = function (grunt) {
             dist: {
                 files: {
                     'css/noprefix/px-overlay-sketch.css': 'sass/px-overlay-sketch.scss',
-                    'css/noprefix/px-overlay.css': 'sass/px-overlay-predix.scss',
-                    'css/noprefix/px-overlay-demo.css': 'sass/px-overlay-demo.scss',
+                    'css/noprefix/px-overlay.css': 'sass/px-overlay-predix.scss'
                 }
+            },
+            demo: {
+              files: {
+                'css/noprefix/px-overlay-demo.css': 'sass/px-overlay-demo.scss'
+              }
             }
         },
 
