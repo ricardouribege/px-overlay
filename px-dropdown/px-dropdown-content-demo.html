@@ -7,7 +7,10 @@
   <link rel="stylesheet" type="text/css" href="css/px-dropdown-demo.css"/>
   <!-- Import custom element. Note: see comment about relative paths to dependencies in the *.html file referenced below -->
   <script src="../webcomponentsjs/webcomponents-lite.js"></script>
-  <link rel="import" href="../px-theme/px-theme.html"/>
+
+  <link rel="import" href="../px-theme/px-theme-styles.html">
+  <style include="px-theme-styles" is="custom-style"></style>
+
   <link rel="import" href="../px-api-viewer/px-api-viewer.html" />
   <link rel="import" href="../px-tabs/px-tab-set.html" />
   <link rel="import" href="px-dropdown.html"/>
@@ -80,7 +83,7 @@
                         extend-dropdown="{{item.extendDropdown}}"
                         extend-dropdown-by="{{item.extendDropdownBy}}"
                         max-cont-character-width="{{item.maxContCharacterWidth}}"
-                        items="[[item.list]]"
+                        items="[[item.items]]"
                         allow-outside-scroll="{{item.allowOutsideScroll}}">
                       </px-dropdown-content>
                     </px-dropdown>
@@ -89,7 +92,8 @@
                 <div class="flex__item">
                   <px-demo-snippet
                     element-properties={{item}}
-                    element-name="px-dropdown-content">
+                    element-name="px-dropdown-content"
+                    parent-name="px-dropdown">
                   </px-demo-snippet>
                 </div>
               </div>
@@ -113,8 +117,6 @@
                     <div class="componentList">
                       <ul>
                         <li><a href="index.html">px-dropdown</a></li>
-                        <li><a href="px-dropdown-text-demo.html">px-dropdown-text</a></li>
-                        <li><a href="px-dropdown-chevron-demo.html">px-dropdown-chevron</a></li>
                       </ul>
                     </div>
                   </div>
@@ -144,7 +146,7 @@
           <li>
             <a href="mailto:info@predix.io" class="footer__list--lnk">Contact Us</a>
           </li>
-          <li>Copyright &copy; {{year}} General Electric Company. All rights reserved.</li>
+          <li>Copyright &copy; 2016 General Electric Company. All rights reserved.</li>
         </ul>
       </div>
     </div>
@@ -153,10 +155,9 @@
 <script>
 window.addEventListener('WebComponentsReady', function() {
   var template = document.querySelector('template[is=dom-bind]'),
-      year = new Date(),
       optionsArray = [
         {
-          list:[
+          items:[
               {"key":"one", "val": "Rhino"},
               {"key":"two", "val": "Giraffe"},
               {"key":"three", "val": "Lion"},
@@ -180,10 +181,11 @@ window.addEventListener('WebComponentsReady', function() {
             ],
             extendDropdownBy: 30,
             extendDropdown: true,
-            allowOutsideScroll: false
+            allowOutsideScroll: false,
+            parentComponent: ["<px-dropdown display-value='Click Me'>", "</px-dropdown>"]
         },
         {
-          list:[
+          items:[
               {"key":"one", "val": "Linux"},
               {"key":"two", "val": "Mac"},
               {"key":"three", "val": "Windows"},
@@ -192,19 +194,17 @@ window.addEventListener('WebComponentsReady', function() {
             ],
             extendDropdownBy: 10,
             extendDropdown: true,
-            allowOutsideScroll: true
+            allowOutsideScroll: true,
+            parentComponent: ["<px-dropdown display-value='Click Me'>", "</px-dropdown>"]
         }
       ],
       indexPlusOne = function(num) {
         return num + 1;
       };
 
-  year = year.getFullYear();
-
   template.selected = "0";
   template.optionsArray = optionsArray;
   template.indexPlusOne = indexPlusOne;
-  template.year = year;
 });
 </script>
 
