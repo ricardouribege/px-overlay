@@ -40,8 +40,9 @@
     "px-buttons-design": "^0.4.26"
   },
   "resolutions": {
-    "iron-ajax": "^1.4.3",
-    "px-typography-design": "~1.1.1",
-    "px-theme": "~1.1.2"
+    "px-functions-design": "~0.3.3",
+    "px-typography-design": "^1.1.0",
+    "px-theme": "^1.1.2",
+    "iron-ajax": "^1.0.0"
   }
 }
